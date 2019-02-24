@@ -1,7 +1,7 @@
 const express = require('express');
 const hbs= require('hbs');
 const fs = require('fs');
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 9090;
 
 var app = express();
 
@@ -81,8 +81,8 @@ res.send({
 });
 
 });
-app.listen((port) => {
+app.listen(port, () => {
 
 console.log(`server is running on port ${port}`);
 
-});
+})
